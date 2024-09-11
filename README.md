@@ -19,14 +19,12 @@ val color = Color.Red
 color.toRgb() //return RGB(255, 0, 0)
 ```
 
-<h3>Available functions</h3>
-
-`.toRgb()` - Convert a color to an RGB(R, G, B) string with components scaled from 0 to 255.
-`.toHex()` - Converts the color object to a #RRGGBB hexadecimal representation (and optionally supports an alpha channel).
-- Have parameter withAlpha - If true, the alpha component of the color will be included in the hexadecimal string.
-`.toHsl()` - Representation of color as hue, saturation and lightness in the HSL(H°, S%, L%) format.
-`.toHsv()` - Convert color to hue, saturation and brightness model in HSV(H°, S%, V%) format.
-`.toCmyk()` - Convert color to CMYK(C%, M%, Y%, K%) string format.
+- `.toRgb()` - Convert a color to an `RGB(R, G, B)` string with components scaled from 0 to 255.  
+- `.toHex()` - Converts the color object to a `#RRGGBB` hexadecimal representation (and optionally supports an alpha channel).
+  - **Parameter** `withAlpha` - If true, the alpha component of the color will be included in the hexadecimal string.  
+- `.toHsl()` - Representation of color as hue, saturation and lightness in the `HSL(H°, S%, L%)` format.  
+- `.toHsv()` - Convert color to hue, saturation, and brightness model in the `HSV(H°, S%, V%)` format.  
+- `.toCmyk()` - Convert color to `CMYK(C%, M%, Y%, K%)` string format.  
 
 <h2>Download</h2>
 <p>Add the dependency in build.gradle file:</p>
