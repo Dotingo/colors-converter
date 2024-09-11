@@ -1,19 +1,20 @@
 <h1>Android Colors Converter Plugin</h1>
 <h4>A simple plugin that allows you to convert a Color object to other popular formats (HEX, RGB, HSL, HSV, CMYK)</h4>
 <h2>Usage</h2>
-<ul>use the Color class from the library androidx.compose.ui.graphics.Color</ul>
+
+1. use the Color class from the library androidx.compose.ui.graphics.Color:
 
 ```kotlin
 import androidx.compose.ui.graphics.Color
 ```
 
-<ul>create a Color object that you want to convert</ul>
+2. create a Color object that you want to convert:
 
 ```kotlin
 val color = Color.Red
 ```
 
-<ul>apply the necessary extension function to the object to convert the color format</ul>
+3. apply the necessary extension function to the object to convert the color format:
 
 ```kotlin
 color.toRgb() //return RGB(255, 0, 0)
