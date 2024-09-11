@@ -5,6 +5,11 @@
 ```
 import androidx.compose.ui.graphics.Color
 ```
+```
+git status
+git add
+git commit
+```
 <li>create a Color object that you want to convert</li>
 ```
 val color = Color.Red
