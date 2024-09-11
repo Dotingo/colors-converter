@@ -3,19 +3,19 @@
 <h2>Usage</h2>
 <ul>use the Color class from the library androidx.compose.ui.graphics.Color</ul>
 
-```
+```kotlin
 import androidx.compose.ui.graphics.Color
 ```
 
 <ul>create a Color object that you want to convert</ul>
 
-```
+```kotlin
 val color = Color.Red
 ```
 
 <ul>apply the necessary extension function to the object to convert the color format</ul>
 
-```
+```kotlin
 color.toRgb() //return RGB(255, 0, 0)
 ```
 
@@ -31,13 +31,13 @@ color.toRgb() //return RGB(255, 0, 0)
 <h2>Download</h2>
 <p>Add the dependency in build.gradle file:</p>
 
-```
+```kotlin
 implementation ("com.github.Dotingo:colors-converter:1.0.1")
 ```
 
 <p>And add the repository in settings.gradle:</p>
 
-```
+```kotlin
 repositories {
 ...
 maven { url = uri("https://jitpack.io") }
