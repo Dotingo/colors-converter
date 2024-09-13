@@ -17,7 +17,7 @@ val color = Color.Red
 3. apply the necessary extension function to the object to convert the color format:
 
 ```kotlin
-color.toRgb() //return RGB(255, 0, 0)
+color.toRgb() //return 255, 0, 0
 ```
 
 - `.toRgb()` - Convert a color to an `RGB(R, G, B)` string with components scaled from 0 to 255.  
