@@ -30,11 +30,11 @@ fun Color.toHex(withAlpha: Boolean = false): String {
  * Converts the Color object to an RGB string in the format "RGB(R, G, B)".
  * The red, green, and blue values are scaled from \[0.0, 1.0\] to \[0, 255\].
  *
- * @return a string in the format "RGB(R, G, B)" where R, G, and B are the red, green, and blue components.
+ * @return a string in the format "R, G, B" where R, G, and B are the red, green, and blue components.
  */
 fun Color.toRgb(): String {
     val (red, green, blue) = this.rgbTo255()
-    return "RGB($red, $green, $blue)"
+    return "$red, $green, $blue"
 }
 
 /**
@@ -43,7 +43,7 @@ fun Color.toRgb(): String {
  * The hue (H) is calculated in degrees and represents the color angle on the color wheel.
  * The saturation (S) and lightness (L) are percentages representing color intensity and brightness, respectively.
  *
- * @return a string in the format "HSL(H°, S%, L%)" where:
+ * @return a string in the format "H°, S%, L%" where:
  * - H is the hue, measured in degrees \[0, 360).
  * - S is the saturation, a percentage \[0, 100\].
  * - L is the lightness, a percentage \[0, 100\].
@@ -79,7 +79,7 @@ fun Color.toHsl(): String {
     val saturation = s * 100
     val lightness = l * 100
 
-    return "HSL(${hue.roundToInt()}°, ${saturation.roundToInt()}%, ${lightness.roundToInt()}%)"
+    return "${hue.roundToInt()}°, ${saturation.roundToInt()}%, ${lightness.roundToInt()}%"
 }
 
 /**
@@ -89,7 +89,7 @@ fun Color.toHsl(): String {
  * The saturation (S) is a percentage representing the intensity of the color.
  * The value (V) is a percentage representing the brightness of the color.
  *
- * @return a string in the format "HSV(H°, S%, V%)" where:
+ * @return a string in the format "H°, S%, V%" where:
  * - H is the hue, measured in degrees \[0, 360).
  * - S is the saturation, a percentage \[0, 100\].
  * - V is the value (brightness), a percentage \[0, 100\].
@@ -125,7 +125,7 @@ fun Color.toHsv(): String {
     val saturation = s * 100
     val value = v * 100
 
-    return "HSV(${hue.roundToInt()}°, ${saturation.roundToInt()}%, ${value.roundToInt()}%)"
+    return "${hue.roundToInt()}°, ${saturation.roundToInt()}%, ${value.roundToInt()}%"
 }
 
 /**
@@ -134,7 +134,7 @@ fun Color.toHsv(): String {
  * The CMYK model is primarily used in printing, where colors are expressed as percentages of cyan, magenta, yellow, and black.
  * The black (K) component is determined first, and the other components (C, M, Y) are calculated relative to the black value.
  *
- * @return a string in the format "CMYK(C%, M%, Y%, K%)" where:
+ * @return a string in the format "C%, M%, Y%, K%" where:
  * - C is the cyan percentage \[0, 100\].
  * - M is the magenta percentage \[0, 100\].
  * - Y is the yellow percentage \[0, 100\].
@@ -158,7 +158,7 @@ fun Color.toCmyk(): String {
     val yellow = (y * 100).roundToInt()
     val black = (k * 100).roundToInt()
 
-    return "CMYK($cyan%, $magenta%, $yellow%, $black%)"
+    return "$cyan%, $magenta%, $yellow%, $black%"
 }
 
 
